@@ -65,7 +65,7 @@ if (window.stConnected) {
 @st.cache_resource
 def load_custom_model():
     try:
-        model_path = "best.pt"
+        model_path = "best_new.pt"
         if not os.path.exists(model_path):
             st.error(f"Model file not found at: {os.path.abspath(model_path)}")
             return None
